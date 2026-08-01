@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<!--
+  ===========================================================================
+  Oriental Bakery — Stone Town, Zanzibar
+  Site designed and built by UmojaServ — https://umojaserv.com
+  ===========================================================================
+-->
+<meta charset="utf-8">
+<meta name="author" content="UmojaServ">
+<meta name="designer" content="UmojaServ">
+<meta name="copyright" content="Oriental Bakery">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loyalty Card — Oriental Bakery | Collect stamps in Stone Town</title>
+<meta name="description" content="Check your Oriental Bakery loyalty stamps with your phone number. Collect stamps each visit to our Stone Town bakery — no card to carry.">
+<link rel="canonical" href="https://orientalbakery.co.tz/pages/loyalty.html">
+
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/logo/apple-touch-icon.png">
+<meta name="theme-color" content="#1B1710">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Loyalty Card — Oriental Bakery, Stone Town">
+<meta property="og:description" content="Collect a stamp every visit. Check your count with your phone number.">
+<!-- TODO: og:image and canonical use the placeholder domain
+     orientalbakery.co.tz. Swap in the real host before launch —
+     Open Graph images must be absolute URLs or the share preview
+     silently falls back to no image. -->
+<meta property="og:image" content="https://orientalbakery.co.tz/assets/images/web/hero-bread.webp">
+<meta property="og:image:alt" content="Assorted fresh-baked artisan breads at Oriental Bakery">
+<meta property="og:locale" content="en_TZ">
+<meta property="og:site_name" content="Oriental Bakery">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://orientalbakery.co.tz/"},
+    {"@type":"ListItem","position":2,"name":"Loyalty Card","item":"https://orientalbakery.co.tz/pages/loyalty.html"}
+  ]
+}
+</script>
+<link rel="stylesheet" href="../assets/css/styles.css">
+<script>document.documentElement.className = 'js';</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ================= NAV (duplicated across pages — no templating) =======
+     Centred brand with the links split either side. The brand sits outside
+     .nav__panel because the panel collapses on mobile and the logo must stay
+     visible when it is closed. -->
+<header class="nav" id="siteNav">
+  <div class="shell nav__inner">
+    <a class="nav__brand" href="../index.html">
+      <img class="nav__mark" src="../assets/logo/logo_emblem.webp" alt="Oriental Bakery logo" width="44" height="44">
+      <span class="nav__wordmark">Oriental Bakery<small>Stone Town</small></span>
+    </a>
+
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+      <span class="visually-hidden">Menu</span>
+    </button>
+
+    <nav class="nav__nav" aria-label="Main">
+      <div class="nav__panel" id="navMenu">
+          <ul class="nav__menu nav__menu--left">
+            <li><a class="nav__link" href="about.html">About</a></li>
+            <li><a class="nav__link" href="menu.html">Menu</a></li>
+            <li><a class="nav__link" href="visit.html">Visit</a></li>
+          </ul>
+          <ul class="nav__menu nav__menu--right">
+            <li><a class="nav__link" href="wholesale.html">Wholesale</a></li>
+            <li><a class="nav__link" href="subscribe.html">Subscribe</a></li>
+            <li><a class="nav__link nav__link--order" href="https://wa.me/255793097773?text=Hi%20Oriental%20Bakery%2C%20I%27d%20like%20to%20order..." target="_blank" rel="noopener">Order</a></li>
+          </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="page-head">
+    <div class="shell page-head__bar">
+      <a class="icon-btn" href="../index.html" aria-label="Back to home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <div class="page-head__title"><h1>Loyalty Card</h1></div>
+      <a class="icon-btn" href="tel:+255793097773" aria-label="Call Oriental Bakery">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6.5 3.5h3l1.5 4-2 1.4a12 12 0 006.1 6.1l1.4-2 4 1.5v3a1.5 1.5 0 01-1.6 1.5A16.5 16.5 0 015 5.1 1.5 1.5 0 016.5 3.5z" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <section class="section" aria-labelledby="loyalty-h">
+    <div class="shell">
+      <div class="section-head reveal">
+        <p class="eyebrow">Rewards</p>
+        <h2 id="loyalty-h">Collect stamps, no card to lose</h2>
+        <!-- TODO: placeholder rule until the client confirms the real programme.
+             If this number changes, STAMPS_FOR_REWARD in backend/Code.gs must
+             change with it — the two are read together. -->
+        <p class="lede">Give us your phone number at the counter and we add a stamp
+          each visit. Collect ten and the tenth loaf is on us. Nothing to carry,
+          nothing to lose — the number is the card.</p>
+        <p class="pending" style="margin-top:.2rem">Programme details not yet confirmed</p>
+      </div>
+
+      <ul class="stamp-row reveal" aria-hidden="true">
+        <li class="is-filled">1</li><li class="is-filled">2</li><li class="is-filled">3</li>
+        <li class="is-filled">4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li>
+      </ul>
+      <p class="preorder__note reveal" style="margin-top:.6rem">An illustration of how the card works — check your own count below.</p>
+    </div>
+  </section>
+
+  <section class="section section--sand" aria-labelledby="check-h">
+    <div class="shell">
+      <div class="section-head reveal">
+        <p class="eyebrow">Check</p>
+        <h2 id="check-h">How many stamps do I have?</h2>
+        <p class="lede">Enter the phone number you gave us in the shop.</p>
+      </div>
+
+      <form class="form reveal" id="loyaltyForm" novalidate style="max-width:30rem">
+        <div class="field">
+          <label for="l-phone">Phone number</label>
+          <input type="tel" id="l-phone" name="phone" autocomplete="tel" placeholder="+255 …">
+        </div>
+        <noscript>
+          <p class="form-status" style="display:block">This form needs JavaScript to
+            send. Message us on
+            <a href="https://wa.me/255793097773?text=Hi%20Oriental%20Bakery%2C%20I%27d%20like%20to%20get%20in%20touch...">WhatsApp</a>
+            or call <a href="tel:+255793097773">+255 793 097 773</a> instead.</p>
+        </noscript>
+        <p class="form-status" role="status" aria-live="polite" hidden></p>
+        <div class="form__actions">
+          <button type="submit" class="door-cta door-cta--order door-cta--sm">Check my stamps</button>
+        </div>
+      </form>
+
+      <div class="loyalty-result" id="loyaltyResult" role="status" aria-live="polite" hidden></div>
+
+      <p class="preorder__note reveal" style="margin-top:1.4rem;max-width:60ch">
+        Stamps are only added by our staff at the counter, so nobody can add their
+        own. Not on the programme yet? Ask us next time you visit, or
+        <a href="https://wa.me/255793097773?text=Hi%20Oriental%20Bakery%2C%20I%27d%20like%20to%20join%20the%20loyalty%20programme..." target="_blank" rel="noopener">message us on WhatsApp</a>.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER (duplicated across pages) ==================== -->
+<footer class="footer">
+  <div class="shell">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">
+          <img src="../assets/logo/logo_emblem.webp" alt="Oriental Bakery logo" width="52" height="52" loading="lazy">
+          <span>Oriental Bakery</span>
+        </div>
+        <p>Middle Eastern bakery in Stone Town, Zanzibar.<br>Love At First Bite.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/orientalbakery100" target="_blank" rel="noopener" aria-label="Oriental Bakery on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/p/Oriental-Bakery-61573446668330/" target="_blank" rel="noopener" aria-label="Oriental Bakery on Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9V7.2c0-.8.2-1.2 1.4-1.2H17V3h-2.6C11.7 3 11 4.5 11 6.9V9H9v3h2v9h3v-9h2.4l.4-3z"/></svg>
+          </a>
+          <!-- TODO: verified 2026-07-31 — the TikTok account @orientalbaker returns
+               "Couldn't find this account". Handle came from the client's Facebook
+               About section. Kept live by request; confirm the real handle or
+               remove. @orientalbakery100 was also checked and does not exist. -->
+          <a href="https://www.tiktok.com/@orientalbaker" target="_blank" rel="noopener" aria-label="Oriental Bakery on TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 3h-2.8v12.1a2.5 2.5 0 11-2-2.45V9.8a5.6 5.6 0 105.1 5.58V9.6a6.4 6.4 0 003.7 1.18V7.9a3.6 3.6 0 01-3.6-3.6z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h2>Find us</h2>
+        <address>
+          Mombasa Round<br>
+          Stone Town, Zanzibar<br>
+          Tanzania<br>
+          <span class="plus-code">Plus Code <strong>R638+23R</strong></span><br>
+          <a href="https://maps.app.goo.gl/MEG9gU2zmF18rCj86" target="_blank" rel="noopener">Open in Google Maps →</a>
+        </address>
+      </div>
+
+      <div>
+        <h2>Get in touch</h2>
+        <ul>
+          <li><a href="tel:+255793097773">+255 793 097 773</a></li>
+          <li>
+            <!-- TODO: confirm this number with the client before publishing —
+                 country code looks like a typo (+20 is Egypt, not Tanzania).
+                 Deliberately not linked and not used for WhatsApp. -->
+            <span>+20 12 86261700 <em>(unconfirmed)</em></span>
+          </li>
+          <li><a href="mailto:orientalbakery100@gmail.com">orientalbakery100@gmail.com</a></li>
+          <li><a href="https://wa.me/255793097773?text=Hi%20Oriental%20Bakery%2C%20I%27d%20like%20to%20order..." target="_blank" rel="noopener">Order on WhatsApp</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Explore</h2>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="visit.html">Visit &amp; order</a></li>
+            <li><a href="wholesale.html">Wholesale</a></li>
+            <li><a href="subscribe.html">The Bread Box</a></li>
+            <li><a href="loyalty.html">Loyalty card</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__base">
+      <span>&copy; <span data-year>2026</span> Oriental Bakery. All rights reserved.</span>
+      <span>Stone Town, Zanzibar, Tanzania</span>
+      <span class="footer__credit">Site designed by <a href="https://umojaserv.com" target="_blank" rel="noopener">UmojaServ</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>
