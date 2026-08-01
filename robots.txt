@@ -1,0 +1,13 @@
+# Oriental Bakery — Stone Town, Zanzibar
+# TODO: replace orientalbakery.co.tz with the real host before launch.
+
+User-agent: *
+Allow: /
+
+# Staff tools are kept out of search with a noindex meta tag on the pages
+# themselves, NOT with a Disallow rule here. Two reasons: robots.txt is public,
+# so listing them would advertise their existence; and a Disallow would stop
+# crawlers reading the noindex, which is what actually keeps them out of the
+# index. Obscurity plus noindex is the deliberate v1 trade-off.
+
+Sitemap: https://orientalbakery.co.tz/sitemap.xml
