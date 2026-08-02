@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<!--
+  ===========================================================================
+  Oriental Bakery — Stone Town, Zanzibar
+  Site designed and built by UmojaServ — https://umojaserv.com
+  ===========================================================================
+-->
+<meta charset="utf-8">
+<meta name="author" content="UmojaServ">
+<meta name="designer" content="UmojaServ">
+<meta name="copyright" content="Oriental Bakery">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Staff — Baked Today | Oriental Bakery</title>
+<meta name="description" content="Internal staff tool for Oriental Bakery.">
+<link rel="canonical" href="https://orientalbakery.co.tz/pages/staff-fresh.html">
+
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/logo/apple-touch-icon.png">
+<meta name="theme-color" content="#1B1710">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Staff — Baked Today | Oriental Bakery">
+<meta property="og:description" content="Internal staff tool.">
+<!-- TODO: og:image and canonical use the placeholder domain
+     orientalbakery.co.tz. Swap in the real host before launch —
+     Open Graph images must be absolute URLs or the share preview
+     silently falls back to no image. -->
+<meta property="og:image" content="https://orientalbakery.co.tz/assets/images/web/hero-bread.webp">
+<meta property="og:image:alt" content="Assorted fresh-baked artisan breads at Oriental Bakery">
+<meta property="og:locale" content="en_TZ">
+<meta property="og:site_name" content="Oriental Bakery">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="stylesheet" href="../assets/css/styles.css">
+<script>document.documentElement.className = 'js';</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" id="siteNav">
+  <div class="shell nav__inner">
+    <a class="nav__brand" href="../index.html">
+      <img class="nav__mark" src="../assets/logo/logo_emblem.webp" alt="Oriental Bakery logo" width="44" height="44">
+      <span class="nav__wordmark">Oriental Bakery<small>Staff tool</small></span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section">
+    <div class="shell">
+      <div class="staff">
+        <span class="staff__badge">Internal — not public</span>
+        <h1>Set today's fresh list</h1>
+        <p class="lede">Type what came out of the oven today, separated by commas.
+          This is what customers see on the homepage. Submitting again replaces
+          today's list.</p>
+
+        <form class="form" id="staffFreshForm" novalidate>
+          <div class="field">
+            <label for="f-items">Fresh today</label>
+            <input type="text" id="f-items" name="items"
+                   placeholder="Khubz, Croissants, Maamoul" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="f-pin">Staff PIN</label>
+            <input type="password" id="f-pin" name="pin" autocomplete="off" inputmode="numeric">
+          </div>
+          <p class="form-status" role="status" aria-live="polite" hidden></p>
+          <div class="form__actions">
+            <button type="submit" class="btn btn-primary">Save today's list</button>
+          </div>
+        </form>
+
+        <p class="preorder__note" style="margin-top:1.3rem">If nothing is saved for
+          today, the homepage quietly shows its normal "baked fresh daily" line
+          instead — it never shows yesterday's list.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>
